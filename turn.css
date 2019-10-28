@@ -1,0 +1,64 @@
+img {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 29vh;
+	margin: 0 auto;
+	width: 42vh;
+	height: 42vh;
+	border-radius: 50%;
+}
+
+.emblem {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 25vh;
+	margin: 0 auto;
+	width: 50vh;
+	height: 50vh;
+	border-radius: 50%;
+	font-weight: bold;
+	color: #003A6F;
+	/* background-color: #003A6F; */
+	animation: spinZ 8s linear infinite;
+	text-align: center;
+}
+
+.emblem span {
+	position: absolute;
+	display: inline-block;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	font-size: 4vh;
+	background-image: linear-gradient(to right, red,orange, yellow, green,lime,blue,MediumPurple );
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-background-size: 200% 100%;
+
+	animation: bgp 16s linear infinite;
+}
+
+@keyframes spinZ {
+	0% {
+		transform: rotateZ(360deg);
+	}
+
+	100% {
+		transform: rotateZ(0deg);
+
+	}
+
+}
+
+@-webkit-keyframes bgp {
+	0% {
+		background-position: 0 0;
+	}
+
+	100% {
+		background-position: -100% 0;
+	}
+}
